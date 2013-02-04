@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="570px"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" >
+
+        <com.example.martixtest.MenuImageView
+            android:id="@+id/library"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/tushuguan"
+            android:scaleType="matrix" >
+        </com.example.martixtest.MenuImageView>
+
+        <com.example.martixtest.MenuImageView
+            android:id="@+id/mysorce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/library"
+            android:layout_alignLeft="@id/library"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/wodechengji"
+            android:scaleType="matrix" >
+        </com.example.martixtest.MenuImageView>
+
+        <com.example.martixtest.MenuImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/library"
+            android:layout_alignRight="@id/library"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/pianhaoshezhi"
+            android:scaleType="matrix" >
+        </com.example.martixtest.MenuImageView>
+
+        <com.example.martixtest.MenuImageView
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mysorce"
+            android:layout_alignLeft="@id/library"
+            android:layout_marginBottom="6dp"
+            android:scaleType="matrix"
+            android:adjustViewBounds="true"
+            android:src="@drawable/kechengbiao" >
+        </com.example.martixtest.MenuImageView>
+
+        <com.example.martixtest.MenuImageView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/setting"
+            android:layout_alignRight="@id/library"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/xiaoneitongzhi"
+            android:scaleType="matrix" >
+        </com.example.martixtest.MenuImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:padding="2dp" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="51dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/btn_search_nor" />
+    </LinearLayout>
+
+    <!--
+         <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo_xiaohui" />
+    -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/login_bg_shap"
+        android:orientation="vertical"
+        android:padding="9dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="广工教务管理系统登录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:context=".LoginAcitivity" />
+
+     
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="学号" />
+
+                <EditText
+                    android:id="@+id/stunum"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="3110006527" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="密码" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:password="true"
+                    android:text="2787457" />
+            </LinearLayout>
+
+            <CheckBox 
+                 android:id="@+id/remenber_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录" />
+        </LinearLayout>
+  
+
+    </LinearLayout>
+    -->
+
+</RelativeLayout>
