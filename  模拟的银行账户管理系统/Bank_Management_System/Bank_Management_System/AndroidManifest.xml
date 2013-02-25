@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bankManagementSystem.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name=".RegisterTipActivity" 
+                  android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".RegisterInputActivity" 
+                  android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".RegisterConfirmActivity" 
+                  android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".UserManActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".UserManQueryActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".UserManTransferAccountsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".UserManUpdatePwdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".FinanicalCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".FinanicalLoanCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".FinanicalGovernmentLoanCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".FinanicalForeignCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".FinanicalMortgageCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".FinanicalMarketActivity"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name=".FinanicalDepositCalActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="FinanicalDepositProfitsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="FinanicalLoanProfitsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+    </application>
+
+</manifest>

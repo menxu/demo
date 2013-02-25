@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/v3_subnav_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/bookstore_toplist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:drawableLeft="@drawable/v3_bookstore_top_icon"
+        android:drawablePadding="2dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:text="展开"
+        android:textColor="#ffffff"
+        android:textSize="16dip" />
+    
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent"
+            android:background="@drawable/v3_bookstore_arrow" />
+    
+    <TextView
+        android:id="@+id/bookstore_toplist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:gravity="center_vertical"
+        android:text="起点月票榜"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

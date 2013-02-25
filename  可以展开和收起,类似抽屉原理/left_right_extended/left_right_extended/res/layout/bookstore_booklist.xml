@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" android:background="#e2e2e2">
+    
+    <ListView
+        android:id="@+id/lstBooklist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#FF666666"
+        android:divider="@null"
+        android:fastScrollEnabled="true"
+        android:fadingEdge="none"
+        android:focusable="true" >
+    </ListView>
+    <TextView android:id="@+id/txtEmpty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="很抱歉，没有找到相应的结果"
+                    android:textColor="#666666" 
+                    android:gravity="center"
+                    android:visibility="gone"
+                    />
+</LinearLayout>

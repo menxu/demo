@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="TitleStyle" >
+    <!--shaowColor阴影颜色shaowDx阴影水平偏移量shadowRadius阴影的范围 -->
+     <item name="android:textSize">19.0sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#dd666666</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+</style>
+<style name="TextStyle1">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+ <style name="TextStyle2">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+<style name="EditBoxTextStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20.0dip</item>
+    </style>
+<style name="EditBoxStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>  
+<style name="SpinnerStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style> 
+</resources>

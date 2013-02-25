@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector
+     xmlns:android="http://schemas.android.com/apk/res/android">
+     <!--当控件获得焦点时 -->
+     <item android:state_focused="true" >
+         <shape>
+            
+          <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF"
+                 android:type="radial"
+                 android:gradientRadius="50" /> 
+             <!-- 描边 -->
+             <stroke
+                 android:width="2dp"
+                 android:color="#FFFFF0"
+                 android:dashWidth="5dp" 
+                android:dashGap="3dp" />
+             <!-- 圆角 -->
+              <corners
+                 android:radius="2dp" />
+            
+         </shape>
+     </item>
+ 
+    <item  >
+         <shape>
+             
+             <stroke
+                 android:width="2dp"
+                 android:color="#00FFFF" />
+              <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF"
+                 android:type="radial"
+                 android:gradientRadius="50" /> 
+         </shape>
+           <corners
+                 android:radius="2dp" />
+     </item>
+
+    
+    
+ </selector>

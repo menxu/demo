@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  
+    <LinearLayout 
+    android:orientation="vertical" 
+    android:id="@+id/layout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/webbg"
+    >
+    <RelativeLayout 
+        android:id="@+id/gTopliner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip"
+        android:background="@drawable/topbg"
+        >
+    <Button
+        android:layout_width="64dip"
+        android:layout_height="30dip"
+        android:id="@+id/btn_back" 
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/returnbutton1_style"
+        android:text="@string/financehelper"
+        android:textSize="10sp"
+        />
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/btn_back"
+        android:layout_marginLeft="65dip"
+        android:text="@string/userfunctuon"
+        android:textSize="20sp"
+        
+        />
+    
+    </RelativeLayout>
+     <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/dock2"    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"    
+        >
+        <RelativeLayout 
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"    
+        >
+         <TextView 
+         android:text="登陆密码" 
+         android:layout_centerVertical="true" 
+         style="@style/EditBoxTextStyle" />
+          <EditText 
+         android:id="@+id/Password" 
+         android:layout_width="155.0dip" 
+         android:hint="请输入修改的密码" 
+         android:maxLength="19" 
+         android:layout_alignParentRight="true" 
+         android:layout_centerVertical="true" 
+         style="@style/EditBoxStyle" />
+        </RelativeLayout>
+         <ImageView 
+         android:layout_width="fill_parent"
+         android:layout_height="1dip"
+         android:src="#ffcccc"   
+            />
+         <LinearLayout 
+          android:orientation="vertical"
+          android:paddingLeft="10dip"
+          android:paddingTop="5dip"
+          android:paddingRight="10dip"
+          android:paddingBottom="5dip"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"   
+             
+             >
+          <TextView 
+          android:textSize="11.0sp"  
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:layout_marginBottom="3.0dip" 
+          android:text="密码为6到30位字母、数字或其组合并区分大小写" 
+          android:maxEms="15" 
+          style="@style/EditBoxTextStyle" />
+          <TextView 
+          android:textSize="11.0sp" 
+          android:textColor="#ff0066ff" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:text="建议输入8位以上字母、数字混合密码，请避免设置安全性过低的密码" 
+          style="@style/EditBoxTextStyle" />   
+          </LinearLayout>
+           <ImageView 
+         android:layout_width="fill_parent"
+         android:layout_height="1dip"
+         android:src="#ffcccc"   
+            />
+          <RelativeLayout 
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"    
+        >
+         <TextView 
+         android:text="重复密码" 
+         android:layout_centerVertical="true" 
+         style="@style/EditBoxTextStyle" />
+          <EditText 
+         android:id="@+id/PasswordConfirm" 
+         android:layout_width="155.0dip" 
+         android:hint="请再次输入密码" 
+         android:maxLength="19" 
+         android:layout_alignParentRight="true" 
+         android:layout_centerVertical="true" 
+         style="@style/EditBoxStyle" />  
+         </RelativeLayout>
+         
+         <LinearLayout
+        android:layout_marginTop="10dip" 
+        android:layout_width="300dip"
+        android:layout_height="45dip"
+        
+        >   
+          <Button
+       android:id="@+id/btn_modify" 
+       android:layout_width="100dip"
+       android:layout_height="fill_parent"
+       android:gravity="center"
+       android:text="确定修改"
+       android:layout_marginLeft="100dip"
+              /> 
+        </LinearLayout>  
+           </LinearLayout> 
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/default_bg"
+    
+    >
+
+    <RelativeLayout
+     android:gravity="center_vertical"
+     android:background="@drawable/title_bg"
+     android:layout_width="fill_parent"
+     android:layout_height="42dip" >
+     <Button 
+      android:textColor="#ffffff"   
+      android:gravity="center"
+      android:id="@+id/returnButton"
+      android:background="@drawable/returnbutton_style"
+      android:layout_width="55dip"
+      android:layout_height="30dip" 
+      android:layout_marginLeft="10dip"
+      android:text="@string/return_button"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true" 
+         />
+      <TextView 
+      android:gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/selfreg_title"   
+      android:layout_centerInParent="true"    
+      style="@style/TitleStyle"   
+          
+          />  
+      <Button 
+      android:textColor="#ffffff"   
+      android:gravity="center"
+      android:id="@+id/confirmButton"
+      android:layout_width="55dip"
+      android:layout_height="30dip" 
+      android:layout_marginRight="10dip"
+      android:background="@drawable/nextbutton_style"
+      android:text="@string/confirm"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true" 
+         />  
+    </RelativeLayout>
+     <TextView 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="25dip"
+       android:layout_marginTop="15dip"
+       android:layout_marginRight="25dip"
+       android:text="@string/pleaseconfirminformation" 
+       style="@style/TextStyle1" 
+       android:gravity="center"
+         />
+     <RelativeLayout 
+        android:orientation="vertical" 
+        android:background="@drawable/dock2" 
+        android:padding="10.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20.0dip" 
+        android:layout_marginTop="10.0dip" 
+        android:layout_marginRight="20.0dip">
+     <TableLayout
+        android:id="@+id/tableLayout"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="2"
+      >
+      <TableRow 
+        android:id="@+id/tableRow1"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+       <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff555555" 
+        android:gravity="right" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_column="1" 
+        android:text="注册卡（账）号：" />
+     <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff666666" 
+        android:gravity="left" 
+        android:id="@+id/tv_bankCardNumber" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="" />   
+      </TableRow>
+      <TableRow 
+        android:id="@+id/tableRow2"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip">
+       <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff555555" 
+        android:gravity="right" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_column="1" 
+        android:text="证件类型：" />
+     <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff666666" 
+        android:gravity="left" 
+        android:id="@+id/tv_IDCardType" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="" />   
+      </TableRow>    
+      <TableRow
+        android:layout_marginTop="5dip" 
+        android:id="@+id/tableRow3"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+       <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff555555" 
+        android:gravity="right" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_column="1" 
+        android:text="用户名   ：" />
+     <TextView 
+        android:textSize="13.0sp" 
+        android:textColor="#ff666666" 
+        android:gravity="left" 
+        android:id="@+id/tv_username" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="" />  
+       </TableRow>     
+     </TableLayout>
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/bg"
+     >
+    <RelativeLayout 
+        android:id="@+id/gTopliner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <ImageView 
+          android:id="@+id/toplogo" 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:layout_marginTop="-7.0dip" 
+          android:src="@drawable/topbg" />
+    </RelativeLayout>
+    <GridView 
+        android:gravity="center"
+         android:id="@+id/gGridView" 
+         android:scrollbars="vertical" 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent" 
+         android:horizontalSpacing="5.0dip" 
+         android:verticalSpacing="10.0dip" 
+         android:stretchMode="columnWidth" 
+         android:columnWidth="70.0dip" 
+         android:numColumns="auto_fit" />
+</LinearLayout>

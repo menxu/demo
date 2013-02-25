@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:paddingBottom="5dip" android:paddingTop="5dip" android:background="@drawable/listitembg"
+	android:paddingLeft="10dip" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:layout_width="50dip" android:scaleType="fitXY"
+			android:layout_height="50dip" android:id="@+id/bookstore_toplist_item_cover" />
+	<TextView android:layout_height="wrap_content"
+		android:id="@+id/bookstore_toplist_item_name" android:layout_width="wrap_content"
+		android:textColor="#000000" android:textSize="18dip"
+		android:layout_marginLeft="5dip" android:layout_weight="1"/>
+</LinearLayout> 

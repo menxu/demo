@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login" >
+
+    <LinearLayout
+        android:id="@+id/lyout1"
+        android:layout_width="250dip"
+        android:layout_height="160dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dip"
+        android:background="@drawable/one"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lyout3"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="37dip"
+                android:text="@string/account"
+                android:textColor="#FFDEAD" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="130dip"
+                android:layout_height="37dip"
+                android:layout_marginTop="4dip"
+                android:hint="@string/pleaseinputzhanghao"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyout4"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="37dip"
+                android:text="@string/login_password"
+                android:textColor="#FFDEAD" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="130dip"
+                android:layout_height="37dip"
+                android:layout_marginTop="4dip"
+                android:hint="@string/pleaseinputpassword"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="160dip"
+            android:layout_height="40dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="45dip"
+            android:gravity="center"
+            android:text="@string/btn_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyout2"
+        android:layout_width="250dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/lyout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/two"
+        android:orientation="vertical" 
+        android:layout_marginTop="30dip">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="230dip"
+            android:layout_height="37dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/selhelp_register"
+            android:textColor="#191970" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="230dip"
+            android:layout_height="37dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/concact_us"
+            android:textColor="#191970" />
+    </LinearLayout>
+
+</RelativeLayout>

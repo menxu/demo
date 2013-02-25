@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01" 
+    android:scrollbars="none" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/webbg">
+    <LinearLayout 
+    android:orientation="vertical" 
+    android:id="@+id/layout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    >
+    <RelativeLayout 
+        android:id="@+id/gTopliner" 
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip"
+        android:background="@drawable/topbg"
+        >
+    <Button
+        android:layout_width="64dip"
+        android:layout_height="30dip"
+        android:id="@+id/btn_back" 
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/returnbutton1_style"
+        android:text="@string/financehelper"
+        android:textSize="10sp"
+        />
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/btn_back"
+        android:layout_marginLeft="65dip"
+        android:text="@string/userfunctuon"
+        android:textSize="20sp"
+        
+        />
+    
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="300dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/one"
+        android:orientation="horizontal"
+        >
+     <TextView 
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="5dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/currency"
+        android:textSize="15sp"
+         
+         />   
+      <Spinner 
+        android:id="@+id/spinner_1"  
+        android:layout_width="215dip" 
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+          /> 
+          
+     </LinearLayout>
+     
+    
+    <LinearLayout 
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/one"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+     >
+   <ListView 
+       android:id="@+id/listview_1"
+       android:layout_width="280dip"
+       android:layout_height="fill_parent"
+       android:layout_marginTop="10dip"
+       android:layout_marginLeft="10dip"
+       android:cacheColorHint="#1E90FF"
+       ></ListView>        
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+</ScrollView>

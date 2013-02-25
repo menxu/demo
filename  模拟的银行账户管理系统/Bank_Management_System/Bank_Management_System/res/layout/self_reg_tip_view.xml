@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/default_bg"
+    
+    >
+
+    <RelativeLayout
+     android:gravity="center_vertical"
+     android:background="@drawable/title_bg"
+     android:layout_width="fill_parent"
+     android:layout_height="42dip" >
+     <Button 
+      android:textColor="#ffffff"   
+      android:gravity="center"
+      android:id="@+id/returnButton"
+      android:background="@drawable/returnbutton_style"
+      android:layout_width="55dip"
+      android:layout_height="30dip" 
+      android:layout_marginLeft="10dip"
+      android:text="@string/return_button"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true" 
+         />
+      <TextView 
+      android:gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/selfreg_title"   
+      android:layout_centerInParent="true"    
+      style="@style/TitleStyle"   
+          
+          />  
+      <Button 
+      android:textColor="#ffffff"   
+      android:gravity="center"
+      android:id="@+id/nextButton"
+      android:background="@drawable/nextbutton_style"
+      android:layout_width="55dip"
+      android:layout_height="30dip" 
+      android:layout_marginRight="10dip"
+      android:text="@string/next_button"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true" 
+         />  
+    </RelativeLayout>
+      <LinearLayout 
+       android:orientation="vertical"  
+       android:id="@+id/linearLayout2"
+       android:background="@drawable/dock2"
+       android:paddingLeft="10dip"
+       android:paddingRight="10dip"
+       android:paddingTop="30dip"
+       android:paddingBottom="30dip"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dip"
+       android:layout_marginTop="30dip"
+       android:layout_marginRight="20dip"  
+          >
+      <TextView 
+       android:textColor="#ff6666"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"   
+       android:text="@string/tip_text"   
+          />    
+          
+      </LinearLayout>
+    
+    
+</LinearLayout>

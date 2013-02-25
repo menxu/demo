@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string-array name="bookstore_top">
+        <item>起点月票榜</item>
+        <item>会员点击榜</item>
+        <item>书友推荐榜</item>
+        <item>书友收藏榜</item>
+        <item>VIP三日更新</item>
+        <item>签约新书榜</item>
+        <item>新人新书榜</item>
+        <item>书友热评榜</item>
+        <item>女生月票榜</item>
+        <item>女生周点榜</item>
+        <item>女生周推榜</item>
+    </string-array>
+    <string-array name="bookstore_top_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>10</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>
